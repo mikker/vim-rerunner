@@ -19,11 +19,11 @@ The idea is to make it easy to **make it do whatever you're doing the most** rig
 
 ```
 " silently run AppleScript that updates chrome
-noremap <leader>rc :silent Mark call system('reload-chrome')<cr>
+noremap <leader>rc :silent Rerun call system('reload-chrome')<cr>
 " mark the current file
-noremap <leader>rf :silent Mark !rspec <c-r>=expand('%')<cr><cr>
+noremap <leader>rf :silent Rerun !rspec <c-r>=expand('%')<cr><cr>
 " mark the current file and line
-noremap <leader>rl :silent Mark !rspec <c-r>=expand('%').':'.line('.')<cr><cr>
+noremap <leader>rl :silent Rerun !rspec <c-r>=expand('%').':'.line('.')<cr><cr>
 ```
 
 It's really up to you.
