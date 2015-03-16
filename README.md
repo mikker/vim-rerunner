@@ -17,6 +17,8 @@ Obviously you could tie it to something fancier like [Dispatch.vim][] or the lik
 
 The idea is to make it easy to **make it do whatever you're doing the most** right now.
 
+I have project specific `.vimrc`s in most of my projects looking more or less like this:
+
 ```
 " silently run AppleScript that updates chrome
 noremap <leader>rc :silent Rerun call system('reload-chrome')<cr>
