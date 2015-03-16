@@ -19,7 +19,7 @@ The idea is to make it easy to **make it do whatever you're doing the most** rig
 
 I have project specific `.vimrc`s in most of my projects looking more or less like this:
 
-```
+```vim
 " silently run AppleScript that updates chrome
 noremap <leader>rc :silent Rerun call system('reload-chrome')<cr>
 " mark the current file
