@@ -16,7 +16,6 @@ fun! s:run(args)
       echo "No focus set yet"
     else
       execute g:rerunner_focus
-      echo g:rerunner_focus
     endif
   endif
 endfun
