@@ -36,14 +36,14 @@ augroup mapCREx
   " Leave the return key alone when i
   " command line windows, since it's used
   " to run commands there.
-  autocmd! CmdwinEnter * :unmap <cr>
+  autocmd! CmdwinEnter * :nunmap <cr>
   autocmd! CmdwinLeave * :call MapCR()
   " Also bring back normal <cr> in QuickFix wins
   autocmd! FileType qf nnoremap <buffer> <cr> <cr>
 augroup END
 
 fun! MapCR()
-  noremap <cr> :Rerun<cr>
+  nnoremap <cr> :Rerun<cr>
 endfun
 call MapCR()
 
